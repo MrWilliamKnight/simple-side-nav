@@ -1,15 +1,20 @@
-<app-side-nav 
-  [sidenavTemplateRef]="navContent"
-  [direction]="'left'" 
-  [navWidth]="280" 
-  [duration]="0.5"></app-side-nav>
+<app-side-nav [sidenavTemplateRef]="navContent" [sidenavHeaderRef]="navHeader" [sidenavFooterRef]="navFooter" [direction]="'right'" [navWidth]="280" [duration]="0.3"></app-side-nav>
+
 <div class="main-container">
-  <app-header></app-header>
-  <section>
-    <router-outlet></router-outlet>
-  </section>
+    <app-header></app-header>
+    <section>
+        <router-outlet></router-outlet>
+    </section>
 </div>
 
+<ng-template #navHeader>
+    <app-side-nav-header></app-side-nav-header>
+</ng-template>
+
 <ng-template #navContent>
-  <app-side-nav-content></app-side-nav-content>
+    <app-side-nav-content></app-side-nav-content>
+</ng-template>
+
+<ng-template #navFooter>
+    <app-side-nav-footer></app-side-nav-footer>
 </ng-template>

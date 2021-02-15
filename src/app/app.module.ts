@@ -8,6 +8,8 @@ import { SideNavContentComponent } from './components/side-nav-content/side-nav-
 import { AppPageComponent } from './pages/app-page/app-page.component';
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
+import { SideNavHeaderComponent } from './components/side-nav-header/side-nav-header.component';
+import { SideNavFooterComponent } from './components/side-nav-footer/side-nav-footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ServicesPageComponent } from './pages/services-page/services-page.compo
     SideNavContentComponent,
     AppPageComponent,
     PortfolioPageComponent,
-    ServicesPageComponent
+    ServicesPageComponent,
+    SideNavHeaderComponent,
+    SideNavFooterComponent
   ],
   imports: [
     BrowserModule,

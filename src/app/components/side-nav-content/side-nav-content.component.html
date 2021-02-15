@@ -1,5 +1,7 @@
 <div class="side-nav-bar-content">
     <ul class="side-nav-bar-menu">
-        <li *ngFor="let navItem of navItems" (click)="onNavigationSelection(navItem)">{{ navItem.label }}</li>
+        <li *ngFor="let navItem of navItems">
+            <a routerLinkActive="active" (click)="onNavigationSelection(navItem)">{{ navItem.label }}</a>
+        </li>
     </ul>
 </div>
